@@ -43,7 +43,7 @@ class Confession(BaseCog):
 
         It'll ask you which guild to confess in if you have more than one with a confession
         """
-
+        confession += "\n~~- -~~"
         async def select_guild(ctx: commands.Context, pages: list, controls: dict, message: discord.Message, page: int, timeout: float, emoji: str):
             # Clean up
             with contextlib.suppress(discord.NotFound):
